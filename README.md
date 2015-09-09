@@ -6,9 +6,11 @@
 
 ## Setup
 
-`cd lib && bower install`
-`cd ..`
-`http-server`
+```
+cd lib && bower install
+cd ..
+http-server
+```
 
 ## Basics
 
