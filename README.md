@@ -6,8 +6,9 @@
 
 ## Setup
 
-1. Create a `lib` directory.
-2. Use Bower to install jQuery in the `lib` directory.
+`cd lib && bower install`
+`cd ..`
+`http-server`
 
 ## Basics
 
