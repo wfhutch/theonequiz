@@ -27,11 +27,33 @@ http-server
 
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
+**Student answer:**
 
-  **Student answer: **
+  All the declared variables are moved to the top inside a function or in the global scope when the script loads.
+
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
+**Student answer:**
 
-  **Student answer: **
+  A callback is when a reference to executable code or actual executable code is passed as an argument to another function.  
+
+  The math question is an example:
+
+function add (a, b) {
+  return a + b;
+};
+
+function subtract (a, b) {
+  return a - b;
+};
+
+function doMath(a, b, c) {
+   return c(a, b);
+};
+
+var addNums = doMath(10, 5, add);
+
+var subNums = doMath(20, 10, subtract);
+
 
 ## Functions and operators
 
@@ -61,18 +83,25 @@ http-server
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
   **Student answer:**
+  Post, Put, Get, Delete
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
+  Promises keep javascript from trying to execute code on data that has not been returned yet.
 
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
+  var deferred = Q.defer()
+  then after the call is made and data retrieved
+  deferred.resolve(data)
+
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
+  **Student answer:**
 
-**Student answer: **
+42 gets logged because the initial call to steve came in the global scope which is where var answer is.
 
 ```
 var answer = "42";

@@ -1,0 +1,33 @@
+.first-sib {
+  /* not sure about what styling goes in this selector */
+}
+
+li {
+  display: inline;
+}
+
+section:nth-child(odd) {
+  border: 1px solid black;
+}
+
+li:nth-child(even) {
+  background-color: lime;
+}
+
+#blue {
+  color: blue;
+}
+
+#div-right {
+  float: right;
+  clear: left;
+}
+
+#div-left {
+  float: left;
+  clear: right;
+}
+
+#below {
+  clear: both;
+}

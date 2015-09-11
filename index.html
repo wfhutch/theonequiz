@@ -12,15 +12,15 @@
   <article class="main-article">
     <section>First sibling
       <ul>
-        <li>First sibling -> A</li>
-        <li>First sibling -> B</li>
-        <li>First sibling -> C</li>
-        <li>First sibling -> D</li>
+        <li class="first-sib">First sibling -> A</li>
+        <li class="first-sib">First sibling -> B</li>
+        <li class="first-sib">First sibling -> C</li>
+        <li class="first-sib">First sibling -> D</li>
       </ul>
     </section>
     <section>
       Second sibling
-      <aside>Second sibling -> aside 1</aside>
+      <aside id="blue">Second sibling -> aside 1</aside>
       <aside>Second sibling -> aside 2</aside>
       <aside>Second sibling -> aside 3</aside>
     </section>
@@ -35,13 +35,13 @@
     <section>Fourth sibling</section>
   </article>
 
-  <div>
+  <div id="div-right">
     I should be on the right side of the screen
   </div>
-  <div>
+  <div id="div-left">
     I should be on the left side of the screen
   </div>
-  <div>
+  <div id="below">
     I should render below my two siblings
   </div>
 
@@ -49,7 +49,10 @@
   <div id="jquery_output"></div>
   
 
-  <script src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="lib/www/lib/jquery/dist/jquery.min.js"></script>
   <script src="javascripts/main.js"></script>
+  <script src="javascripts/IIFE.js"></script>
+  <script src="javascripts/AugmentedIIFE.js"></script>
+
 </body>
 </html>
